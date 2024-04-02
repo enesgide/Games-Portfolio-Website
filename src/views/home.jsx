@@ -1,11 +1,14 @@
 import Header from '../components/header.jsx'
+import GamesCarousel from '../components/gamesCarousel.jsx'
 
 const Home = () => {
     return (
-        <main>
+        <div>
             <Header />
-            <h1>Home page</h1>
-        </main>
+            <main>
+                <GamesCarousel />
+            </main>
+        </div>        
     );
 };
 

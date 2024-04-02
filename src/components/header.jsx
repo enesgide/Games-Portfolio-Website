@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom"
+import RoundButton from "./roundButton.jsx"
 
 const Header = () => {
     const navLinks = [
@@ -19,7 +20,7 @@ const Header = () => {
                         }) }
                     </ul>       
                     <div className="contact-nav-button">
-                        <button>CONTACT US</button>
+                        <RoundButton text="Contact Us" color="orange" />
                     </div>         
                 </div>
             </div>            
