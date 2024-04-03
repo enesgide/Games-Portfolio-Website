@@ -1,14 +1,14 @@
 import Header from '../components/header.jsx'
-import Banner from '../components/banner.jsx'
+import Stats from '../components/stats.jsx'
 import GamesCarousel from '../components/gamesCarousel.jsx'
 
 const Home = () => {
     return (
         <div>
             <Header />
-            <main>
-                <Banner />
+            <main>                
                 <GamesCarousel />
+                <Stats />
             </main>
         </div>        
     );

@@ -1,12 +1,11 @@
-import {Link} from "react-router-dom"
 import RoundButton from "./roundButton.jsx"
 
 const Header = () => {
     const navLinks = [
         {id: 1, text: "Home", url: "/"},
-        {id: 2, text: "Games", url: "/games"},
-        {id: 3, text: "Blogs", url: "/blogs"},
-        {id: 4, text: "Merch", url: "/merch"},
+        {id: 2, text: "Games", url: "#games"},
+        {id: 3, text: "Stats", url: "#stats"},
+        {id: 4, text: "Roblox", url: "https://www.roblox.com/groups/9512031/Awesome-Fun-Games#!/about"},
     ]
 
     return (
@@ -20,7 +19,7 @@ const Header = () => {
                         }) }
                     </ul>       
                     <div className="contact-nav-button">
-                        <RoundButton text="Contact Us" color="orange" />
+                        <RoundButton text="Contact Us" color="orange" leftIcon="envelope.png"/>
                     </div>         
                 </div>
             </div>            
@@ -30,11 +29,11 @@ const Header = () => {
 
 const NavButton = (props) => {
     return (
-        <Link to={props.url}>
-            <li className="nav-text">
+        <li className="nav-button">
+            <a className="nav-text" href={props.url}>
                 {props.text}
-            </li>
-        </Link>
+            </a>
+        </li>
     );
 }
 

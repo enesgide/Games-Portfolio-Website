@@ -30,6 +30,7 @@ ul {
 }
 
 header {
+  z-index: 100;
   position: sticky;
   top: 0;
   margin: 0;
@@ -63,15 +64,29 @@ header {
 }
 
 .nav-buttons {
-  display: flex;
+  height: 100%;
+  display: flex;    
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 50px;
   color: var(--sec-color);
 }
 
 .nav-buttons .active {
   color: var(--prim-color); 
+}
+
+.nav-button {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;    
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button:hover {
+  border-top: 2px solid rgba(0,0,0,0);
+  border-bottom: 2px solid orange;
 }
 
 .nav-text {  
