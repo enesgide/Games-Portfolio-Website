@@ -79,3 +79,60 @@ header {
   font-weight: 500;
 }
 
+.heading1 {
+  text-align: center;
+  color: #2B2B2B;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.subheading1 {
+  text-align: center;
+  color: rgb(120, 120, 120);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.banner > .stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 20px 40px;
+  color: #fff;
+}
+
+.green {
+  background-color: rgb(0, 208, 15);
+  box-shadow: 0 0 35px 5px rgba(0, 208, 15, 0.5), 0 5px 10px 0 rgba(0, 208, 15, 0.05);
+}
+
+.blue {
+  background-color: rgb(66, 116, 253);
+  box-shadow: 0 0 35px 5px rgba(66, 116, 253, 0.5), 0 5px 10px 0 rgba(66, 116, 253, 0.05);
+}
+
+.red {
+  background-color: rgb(254, 67, 73);
+  box-shadow: 0 0 35px 5px rgba(254, 67, 73, 0.5), 0 5px 10px 0 rgba(254, 67, 73, 0.05);
+}
+
+.yellow {
+  background-color: rgb(251, 186, 9);
+  box-shadow: 0 0 35px 5px rgba(251, 186, 9, 0.5), 0 5px 10px 0 rgba(251, 186, 9, 0.05);
+}

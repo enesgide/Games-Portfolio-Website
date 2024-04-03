@@ -1,29 +1,13 @@
 const GamesCarousel = () => {
-    const styles = {
-        heading1: {
-            textAlign: "center",
-            color: "#2B2B2B",
-            fontSize: "50px",
-            fontWeight: "800"
-        },
-        heading2: {
-            textAlign: "center",
-            color: "rgb(120, 120, 120)",
-            fontSize: "22px",
-            fontWeight: "500",
-            marginBottom: "20px"
-        }
-    }
-
     return (
         <div style={{backgroundColor: "rgb(232, 236, 241)", marginTop: "0", padding: "50px 0"}}>
-            <div style={styles.heading1}>Our Games</div>
-            <div style={styles.heading2}>Check out our most popular games here.</div>
+            <div className="heading1">Our Games</div>
+            <div className="subheading1">Check out our most popular games here.</div>
             <div className="games-container"
-                style={{display: "flex", margin: "0 10px", justifyContent: "space-evenly", alignItems: "center", gap: "10px"}}>
-                <GameItem title="Melee Simulator! ⚔️" icon="thumbnailms.png" year="2019"/>
-                <GameItem title="Tower Defense: Mythic! 🏰" icon="thumbnailtdm.png" year="2021"/>                
-                <GameItem title="Build to Survive! 🔨" icon="thumbnailb2s.png" year="2023"/>
+                style={{display: "flex", margin: "25px 10px 0 10px", justifyContent: "space-evenly", alignItems: "center", gap: "10px"}}>
+                <GameItem title="Melee Simulator! ⚔️" icon="thumbnailms.png" visits="11.7" year="2019"/>
+                <GameItem title="Build to Survive! 🔨" icon="thumbnailb2s.png" visits="45" year="2023"/>
+                <GameItem title="Tower Defense: Mythic! 🏰" icon="thumbnailtdm.png" visits="18.2" year="2021"/>  
             </div>
         </div>
     );
@@ -50,10 +34,17 @@ const GameItem = (props) => {
         },
         title: {
             textAlign: "center",
-            fontFamily: "outfit, sans-serif",
             fontSize: "26px",
             fontWeight: "700",
             color: "#2B2B2B",
+            marginTop: "0",
+            marginBottom: "5px"
+        },
+        visits: {
+            textAlign: "center",
+            fontSize: "18px",
+            fontWeight: "600",
+            color: "rgb(120, 120, 120)",
             marginTop: "0",
             marginBottom: "5px"
         },
@@ -77,6 +68,7 @@ const GameItem = (props) => {
                 <img src={props.icon} alt="game icon" style={styles.icon}/>
             </div>
             <p style={styles.title}>{props.title}</p>
+            <p style={styles.visits}>{props.visits}M+ Play Sessions</p>
             <p style={styles.year}>{props.year}</p>
         </div>
     );
